@@ -1,0 +1,29 @@
+// DeviceSimulator.idl : type library source for DeviceSimulator.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (DeviceSimulator.tlb).
+
+[ uuid(e6783418-9892-4919-bb19-a98146f252c6), version(1.0) ]
+library DeviceSimulator
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  Primary dispatch interface for CDeviceSimulatorDoc
+
+	[ uuid(265aafd9-92fc-46d5-93c2-ac981ffe1362) ]
+	dispinterface IDeviceSimulator
+	{
+		properties:
+
+		methods:
+	};
+
+	//  Class information for CDeviceSimulatorDoc
+
+	[ uuid(e47469a2-7a48-4a5b-ac38-ba7b45270d1d) ]
+	coclass CDeviceSimulatorDoc
+	{
+		[default] dispinterface IDeviceSimulator;
+	};
+};
